@@ -2,13 +2,46 @@
 
 // Desafio Super Trunfo - Países
 // Tema 2 - Comparação das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de comparação de cartas de cidades. 
-// Siga os comentários para implementar cada parte do desafio.
+
+int menu() {
+    int opcao;
+    int mostrarMenu = 1;
+    
+    while(mostrarMenu) {
+        printf("----- MENU -----\n");
+        printf("1- Iniciar jogo\n");
+        printf("2- Regras\n");
+        printf("3- Sair\n");
+
+        printf("\nEscolha um opção: ");
+        scanf("%d", &opcao);
+
+        switch(opcao) {
+            case 1:
+                mostrarMenu = 0;
+                break;
+            case 2:
+                printf("Cadastre 2 cidades e batalhe escolhendo qual o atributo ganhará.\n\n");
+                break;
+            case 3:
+                printf("Jogo encerrado!\n\n----------------------------------\n");
+                return 1;
+        }
+    }
+
+    return 0;
+}
+
+int jogo() {
+    printf("Jogo iniciado");
+}
 
 int main() {
-    // Definição das variáveis para armazenar as propriedades das cidades
-    // Você pode utilizar o código do primeiro desafio
+    printf("Super Trunfo - Cidades\n\n");
 
+    if (menu() == 0) {
+        jogo();
+    }
     
     // Cadastro das Cartas:
     // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
