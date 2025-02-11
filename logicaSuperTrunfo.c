@@ -57,7 +57,7 @@ int jogo() {
     float pibPerCapita2;
     int pontosTuristicos2;
 
-    // Carta 1
+    // Cadastro - carta 1
     printf("\n----- Cadastro da cidade 1 -----\n");
     
     printf("Digite o código do estado [A-H]: ");
@@ -91,7 +91,7 @@ int jogo() {
     densidadePopulacional1 = populacao1 / area1;
     pibPerCapita1 = (pib1 * 1000000000) / populacao1;
 
-    // Visualização
+    // Visualização - carta 1
     printf("\n----- Carta 1 -----\n");
     printf("Estado: %c\n", estado1);
     printf("Código da Carta: %s\n", codigo1);
@@ -103,7 +103,7 @@ int jogo() {
     printf("PIB per Capita: %.0f reais\n", pibPerCapita1);
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);
 
-    // Carta 2
+    // Cadastro - carta 2
     printf("\n----- Cadastro da cidade 2 -----\n");
     
     printf("Digite o código do estado [A-H]: ");
@@ -137,7 +137,7 @@ int jogo() {
     densidadePopulacional2 = populacao2 / area2;
     pibPerCapita2 = (pib2 * 1000000000) / populacao2;
 
-    // Visualização
+    // Visualização - carta 2
     printf("\n----- Carta 2 -----\n");
     printf("Estado: %c\n", estado2);
     printf("Código da Carta: %s\n", codigo2);
@@ -149,6 +149,8 @@ int jogo() {
     printf("PIB per Capita: %.0f reais\n", pibPerCapita2);
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
 
+    printf("\n");
+
     // Jogar
     while(mostrarMenu) {
         printf("\n----- Hora de Jogar -----\n");
@@ -158,7 +160,7 @@ int jogo() {
         printf("4- Comparar PIB\n");
         printf("5- Comparar PIB per Capita\n");
         printf("6- Comparar Pontos Turísticos\n");
-        printf("7- Sair\n");1
+        printf("7- Sair\n");
 
         printf("\nEscolha um opção: ");
         scanf("%d", &opcao);
@@ -230,6 +232,6 @@ int main() {
         jogo();
     }
 
-    printf("\nJogo finalizado!\n");
+    printf("Jogo finalizado!\n");
     return 0;
 }
