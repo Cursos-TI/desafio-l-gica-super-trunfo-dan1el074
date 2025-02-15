@@ -219,7 +219,7 @@ int jogo() {
                     printf("> %s tem maior PIB.\n", nome2);
                 }
                 if (pib1 == pib2) {
-                    printf("> As cidades têm o mesmo PIB.\n", nome2);
+                    printf("> As cidades têm o mesmo PIB.\n");
                 }
                 break;
 
@@ -231,7 +231,7 @@ int jogo() {
                     printf("> %s tem maior PIB per Capita.\n", nome2);
                 }
                 if (pibPerCapita1 == pibPerCapita2) {
-                    printf("> As cidades têm o mesmo PIB per Capita.\n", nome2);
+                    printf("> As cidades têm o mesmo PIB per Capita.\n");
                 }
                 break;
 
@@ -243,7 +243,7 @@ int jogo() {
                     printf("> %s tem mais Pontos Turísticos.\n", nome2);
                 }
                 if (pontosTuristicos1 == pontosTuristicos2) {
-                    printf("> As cidades têm o mesmo número de pontos turísticos.\n", nome2);
+                    printf("> As cidades têm o mesmo número de pontos turísticos.\n");
                 }
                 break;
             
@@ -255,7 +255,7 @@ int jogo() {
                     printf("> %s tem o Super Poder mais forte!\n", nome2);
                 }
                 if (superPoder1 == superPoder2) {
-                    printf("> As cidades têm o mesmo número de Super Poder.\n", nome2);
+                    printf("> As cidades têm o mesmo número de Super Poder.\n");
                 }
                 break;
             
